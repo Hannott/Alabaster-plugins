@@ -1,0 +1,14 @@
+{
+  "id": "showcase",
+  "name": "Plugin showcase",
+  "version": "0.1.0",
+  "description": "Every component and helper a plugin can use, on one card and one page.",
+  "author": "Alabaster",
+  "apiVersion": 1,
+  "entry": "index.js",
+  "style": "style.css",
+  "contributes": {
+    "modules": ["showcase"],
+    "pages": ["showcase"]
+  }
+}

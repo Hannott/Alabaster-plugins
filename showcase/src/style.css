@@ -1,0 +1,30 @@
+/*
+ * A plugin's own stylesheet, loaded with it and removed when it is switched
+ * off. Prefix every class with the plugin's id: the rules are global.
+ *
+ * Colour comes from Alabaster's semantic tokens, never from a literal, so the
+ * plugin follows the reader's theme and stays readable in light and dark.
+ * Alabaster's Tailwind utilities are only present when Alabaster itself uses
+ * them, so do not rely on a utility class here — write the rule.
+ */
+.showcase-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.showcase-grid--two {
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.showcase-note {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.showcase-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
